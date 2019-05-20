@@ -85,8 +85,10 @@ Programmet skall fråga efter namn på en svarsfil. Därefter skriver programmet
 ![1.gif](./1.gif)
 
 2. Resultat för en hel klass
-Programmet skall fråga efter namn på en mapp. Därefter läser programmet in alla filer i mappen och skriver ut följande resultat:
 
+  Programmet skall fråga efter namn på en mapp. Därefter läser programmet in alla filer i mappen och skriver ut följande resultat:
+
+* Filnamn och resultat (antal rätt) för varje prov
 * Namnet på filen med högst poäng (om flera har samma poäng, tag den första)
 * Medel av alla resultat
 * Median av alla resultat. 
