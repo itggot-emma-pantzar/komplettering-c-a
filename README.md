@@ -12,6 +12,56 @@ I task-baren längst ner i windows ser du till höger en röd plupp. När du är
 
 Filmen sparas i mp4-formatet. I Classroom finnas en separat inlämningsuppgift där du laddar upp filmen senast ett dygn efter provets slut.
 
+#### Funktionalitet
+
+Den här uppgiften går ut på att skriva ett program som läser in en fil med provsvar för en elev, och och skriver för varje fråga ut om eleven svarat rätt. Sedan skriver provet ut totala antal rätt eleven hade i provet.
+
+
+Följande funktionalitet ska finnas: 
+
+En meny som frågar vilken data som efterfrågas:
+
+![0.gif](./0.gif)
+
+1. Resultat för en enskild elev
+
+Programmet skall fråga efter namn på en svarsfil. Därefter skriver programmet för varje rad ut frågans nummer följt av "Rätt" eller "Fel" beroende på om eleven svarat rätt eller fel. Slutligen skriver programmet ut antalet poäng eleven fick på provet.
+
+![1.gif](./1.gif)
+
+2. Resultat för en hel klass
+
+  Programmet skall fråga efter namn på en mapp. Därefter läser programmet in alla filer i mappen och skriver ut följande resultat:
+
+* Filnamn och resultat (antal rätt) för varje prov
+* Namnet på filen med högst poäng (om flera har samma poäng, tag den första)
+* Medel av alla resultat
+* Median av alla resultat. 
+
+![2.gif](./2.gif)
+
+
+#### Dataformat
+
+* svarsfilen består av en *rad* text per provfråga.
+* Varje rad har två kolumner med tecken, där den första kolumnen visar korrekt svarsalternativ, och den andra kolumnen visar det svarsalternativ eleven valt.
+* Programmet som skapar proven har kastat om svarsalternativen för varje fråga - dvs det som är rätt svarsalternativ för en elev på en fråga är inte nödvändigtvis rätt svarsalternativ för en annan elev.
+* Svarsalternativ består av ett tecken (a, b, c ,d, e eller f)
+
+Exempel svarsfil (enbart 10 rader):
+```
+a b
+b b
+b b
+a a
+f d
+e e
+d d
+c a
+c c
+b b
+```
+
 ## Bedömningsmatris
 
 #### Planering & Problemanalys
@@ -67,52 +117,3 @@ I din självbedömning:
 - Hur kan du förbättra ditt program?
 - Finns det något som kan optimeras?
 
-#### Funktionalitet
-
-Den här uppgiften går ut på att skriva ett program som läser in en fil med provsvar för en elev, och och skriver för varje fråga ut om eleven svarat rätt. Sedan skriver provet ut totala antal rätt eleven hade i provet.
-
-
-Följande funktionalitet ska finnas: 
-
-En meny som frågar vilken data som efterfrågas:
-
-![0.gif](./0.gif)
-
-1. Resultat för en enskild elev
-
-Programmet skall fråga efter namn på en svarsfil. Därefter skriver programmet för varje rad ut frågans nummer följt av "Rätt" eller "Fel" beroende på om eleven svarat rätt eller fel. Slutligen skriver programmet ut antalet poäng eleven fick på provet.
-
-![1.gif](./1.gif)
-
-2. Resultat för en hel klass
-
-  Programmet skall fråga efter namn på en mapp. Därefter läser programmet in alla filer i mappen och skriver ut följande resultat:
-
-* Filnamn och resultat (antal rätt) för varje prov
-* Namnet på filen med högst poäng (om flera har samma poäng, tag den första)
-* Medel av alla resultat
-* Median av alla resultat. 
-
-![2.gif](./2.gif)
-
-
-#### Dataformat
-
-* svarsfilen består av en *rad* text per provfråga.
-* Varje rad har två kolumner med tecken, där den första kolumnen visar korrekt svarsalternativ, och den andra kolumnen visar det svarsalternativ eleven valt.
-* Programmet som skapar proven har kastat om svarsalternativen för varje fråga - dvs det som är rätt svarsalternativ för en elev på en fråga är inte nödvändigtvis rätt svarsalternativ för en annan elev.
-* Svarsalternativ består av ett tecken (a, b, c ,d, e eller f)
-
-Exempel svarsfil (enbart 10 rader):
-```
-a b
-b b
-b b
-a a
-f d
-e e
-d d
-c a
-c c
-b b
-```
